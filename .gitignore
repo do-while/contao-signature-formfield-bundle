@@ -1,0 +1,5 @@
+.git/
+#IDE
+.buildpath
+.project
+.settings/

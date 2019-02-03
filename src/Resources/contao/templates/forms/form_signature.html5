@@ -1,0 +1,45 @@
+<?php
+    $GLOBALS['TL_CSS'][] = 'bundles/softleistersignatureformfield/styles.css|static';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/softleistersignatureformfield/jSignature.min.noconflict.js|static';
+    $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/softleistersignatureformfield/jSignature.UndoButton.js|static';
+?>
+
+<?php $this->extend('form_row'); ?>
+
+<?php $this->block('label'); ?>
+  <?php if ($this->label): ?>
+    <label for="ctrl_<?= $this->id ?>"<?php if ($this->class): ?> class="<?= $this->class ?>"<?php endif; ?>>
+      <?php if ($this->mandatory): ?>
+        <span class="invisible"><?= $this->mandatoryField ?> </span><?= $this->label ?><span class="mandatory">*</span>
+      <?php else: ?>
+        <?= $this->label ?>
+      <?php endif; ?>
+    </label>
+  <?php endif; ?>
+<?php $this->endblock(); ?>
+
+<?php $this->block('field'); ?>
+  <?php if ($this->hasErrors()): ?>
+    <p class="error"><?= $this->getErrorAsString() ?></p>
+  <?php endif; ?>
+
+  <input id="hidden_<?= $this->id ?>" type="hidden" name="<?= $this->name ?>" value="">
+  <div id="signature_<?= $this->id ?>" class="canvas" style="width:<?= $this->width ?>px;height:<?= $this->height ?>px;background-color:#<?= $this->bgcolor ?>;"></div>
+  <script>
+      $(document).ready(function() {
+          var $sigdiv = $("#signature_<?= $this->id ?>")
+          $sigdiv.jSignature({
+              'color': "#<?= $this->color ?>",
+              'lineWidth': <?= $this->pen ?>,
+              'width': '<?= $this->width ?>',
+              'height': '<?= $this->height ?>',
+              'background-color': "transparent",
+              'UndoButton': true
+          })
+          $sigdiv.bind('change', function(e) {
+              document.getElementById("hidden_<?= $this->id ?>").value = $sigdiv.jSignature("getData","default")
+          })
+      })
+  </script>
+  
+<?php $this->endblock(); ?>

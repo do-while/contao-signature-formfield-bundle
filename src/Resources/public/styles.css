@@ -1,0 +1,21 @@
+/* Signature */
+[id^="signature_"].canvas {
+    position:relative;
+    width:100%;
+    left:0;
+    top:0;
+    border:1px solid #ccc;
+    margin-bottom:8px;
+}    
+[id^="signature_"].canvas input[type="button"] {
+    text-indent:-9999em;
+    line-height:0;
+    width:45px;
+    height:24px;
+    background-image:url('../../system/themes/flexible/icons/undo.svg');
+    background-position:center center;
+    background-repeat:no-repeat;
+    border:1px solid #ccc;
+    left:4px !important;
+    top:-8px !important;
+}

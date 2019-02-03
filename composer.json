@@ -1,0 +1,36 @@
+{
+    "name": "do-while/contao-signature-formfield-bundle",
+    "description": "Signature form field for Contao form generator",
+    "keywords": ["contao", "widget", "signature", "forms"],
+    "type": "contao-bundle",
+    "homepage": "https://www.softleister.de",
+    "license": "MIT License",
+    "authors": [{
+        "name": "Softleister - Hagen Klemp",
+        "homepage": "https://www.softleister.de",
+        "role": "Developer"
+    }],
+    "support": {
+        "email": "info@softleister.de"
+    },
+    "require": {
+        "php": ">=5.6.0",
+        "contao/core-bundle": "~4.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Softleister\\SignatureformfieldBundle\\": "src/"
+        },
+        "classmap": [
+            "src/Resources/contao/"
+        ],
+        "exclude-from-classmap": [
+            "src/Resources/contao/config/",
+            "src/Resources/contao/dca/",
+            "src/Resources/contao/languages/"
+        ]
+    },
+    "extra": {
+		"contao-manager-plugin": "Softleister\\SignatureformfieldBundle\\ContaoManager\\Plugin"
+    }
+}
