@@ -4,7 +4,7 @@
     "keywords": ["contao", "widget", "signature", "forms"],
     "type": "contao-bundle",
     "homepage": "https://www.softleister.de",
-    "license": "MIT License",
+    "license": "MIT",
     "authors": [{
         "name": "Softleister - Hagen Klemp",
         "homepage": "https://www.softleister.de",
