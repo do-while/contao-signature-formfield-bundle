@@ -19,7 +19,7 @@ Formularvariable einen data-String mit den Bilddaten.
 ![Siganture parameters](https://github.com/do-while/contao-signature-formfield-bundle/raw/master/doc/signature-parameters.png)
 
 
-**Verwendung im Notification-Center**
+## Verwendung im Notification-Center
 
 In dem HTML-Teil der Benachrichtigung kann die Unterschrift als Bild eingebaut werden. 
 Dazu muss man allerdings den SimpleToken in der Quelltext-Ansicht in das HTML einsetzen.
