@@ -5,7 +5,7 @@
 1. Ergänzen Sie als _letzten_ Eintrag im Bereich "require" diese Zeile
 ```
     "require": {
-        "do-while/contao-signature-formfield-bundle": "^1.0"
+        "do-while/contao-signature-formfield-bundle": "dev-master"
     }
 ```
 1. Dann rufen Sie den Composer mit `composer update` auf oder Sie rufen den **Contao Manager** auf.
@@ -16,7 +16,7 @@ Nach der Installation steht Ihnen das neue Formularelement "Unterschrift" zur Ve
 Das Element können Sie wie gewohnt im Formular einsetzen. Beim Absenden erhält die 
 Formularvariable einen data-String mit den Bilddaten.
 
-![Siganture parameters](https://github.com/do-while/contao-signature-formfield-bundle/master/doc/signature-parameters.png)
+![Siganture parameters](https://github.com/do-while/contao-signature-formfield-bundle/raw/master/doc/signature-parameters.png)
 
 
 **Verwendung im Notification-Center**
@@ -24,7 +24,7 @@ Formularvariable einen data-String mit den Bilddaten.
 In dem HTML-Teil der Benachrichtigung kann die Unterschrift als Bild eingebaut werden. 
 Dazu muss man allerdings den SimpleToken in der Quelltext-Ansicht in das HTML einsetzen.
 
-![Unterschrift in der Mail ausgeben](https://github.com/do-while/contao-signature-formfield-bundle/master/doc/html-mail.png)
+![Unterschrift in der Mail ausgeben](https://github.com/do-while/contao-signature-formfield-bundle/raw/master/doc/html-mail.png)
 
 
 
