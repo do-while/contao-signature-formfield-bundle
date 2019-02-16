@@ -5,7 +5,7 @@
 1. Ergänzen Sie als _letzten_ Eintrag im Bereich "require" diese Zeile
 ```
     "require": {
-        "do-while/contao-signature-formfield-bundle": "dev-master"
+        "do-while/contao-signature-formfield-bundle": "^1.0"
     }
 ```
 1. Dann rufen Sie den Composer mit `composer update` auf oder Sie rufen den **Contao Manager** auf.
@@ -32,11 +32,11 @@ Dazu muss man allerdings den SimpleToken in der Quelltext-Ansicht in das HTML ei
 
 
 ## Version
-* 0.1.0<br>Testversion: 2019-02-05<br>Version für Contao ab Version 4.4 LTS
+* 1.0.0<br>Erstversion: 2019-02-16<br>Version für Contao ab Version 4.4 LTS
 
 
 **Problem melden | *Report Problem*:**<br>
 https://github.com/do-while/contao-signature-formfield-bundle/issues
 
 ___
-Softleister - 2019-02-05
+Softleister - 2019-02-16
