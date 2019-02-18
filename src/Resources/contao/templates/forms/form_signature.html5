@@ -44,5 +44,5 @@
         });
     })(jQuery);
   </script>
-  
+
 <?php $this->endblock(); ?>

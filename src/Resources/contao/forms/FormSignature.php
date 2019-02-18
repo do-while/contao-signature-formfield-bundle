@@ -46,11 +46,10 @@ class FormSignature extends \Widget
 			case 'sig_bgcolor':		$this->sig_bgcolor = empty($this->sig_bgcolor) ? 'transparent' : '#' . $this->sig_bgcolor;
 									break;
 
-			case 'sig_color':		if(empty($this->sig_color)) $this->sig_color = '000';
-									break;
-
 			case 'sig_width':		$this->sig_width = is_numeric($this->sig_width) && ($this->sig_width > 0) ? $this->sig_width : 5;
 									break;
+
+			case 'sig_color':		$varValue = $varValue == '' ? '000' : $varValue;
 
 			default:				parent::__set($strKey, $varValue);
 		}
