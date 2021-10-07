@@ -15,6 +15,7 @@
  * Additions tl_form_field
  */
 $GLOBALS['TL_DCA']['tl_form_field']['palettes']['signature'] = '{type_legend},type,name,label;'
+                                                              .'{fconfig_legend},mandatory;'
                                                               .'{size_legend},sig_size;'
                                                               .'{expert_legend:hide},class,sig_bgcolor,sig_color,sig_width;'
                                                               .'{template_legend:hide},customTpl;'
