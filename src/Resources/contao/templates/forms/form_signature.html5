@@ -31,11 +31,11 @@
         $(function() {
             var $sigdiv = $("#signature_<?= $this->id ?>")
             $sigdiv.jSignature({
-                'color': "#<?= $this->color ?>",
+                'color': "<?= $this->color ?>",
                 'lineWidth': <?= $this->pen ?>,
                 'width': '<?= $this->width ?>',
                 'height': '<?= $this->height ?>',
-                'background-color': "transparent",
+                'background-color': '<?= $this->bgcolor ?>',
                 'UndoButton': true
             })
             $sigdiv.bind('change', function(e) {
