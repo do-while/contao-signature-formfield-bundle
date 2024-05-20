@@ -16,7 +16,7 @@
     "require": {
         "php": "^8.1",
         "contao/core-bundle": "~5.3",
-        "brinley/jSignature": "^2.1"
+        "brinley/jsignature": "^2.1"
     },
     "autoload": {
         "psr-4": {
