@@ -14,8 +14,9 @@
         "email": "info@softleister.de"
     },
     "require": {
-        "php": ">=5.6.0",
-        "contao/core-bundle": "~4.4"
+        "php": "^8.1",
+        "contao/core-bundle": "~5.3",
+        "brinley/jSignature": "^2.1"
     },
     "autoload": {
         "psr-4": {

@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Extension for Contao 4
+ * Extension for Contao 5
  *
- * @copyright  Softleister 2019-2023
+ * @copyright  Softleister 2019-2024
  * @author     Softleister <info@softleister.de>
  * @package    contao-signature-formfield-bundle
  *             based on jSignature (https://github.com/brinley/jSignature)
